@@ -172,6 +172,9 @@
 /* Define to 1 if you have the `on_exit' function. */
 #undef HAVE_ON_EXIT
 
+/* Define to 1 if you have the `posix_spawn' function. */
+#undef HAVE_POSIX_SPAWN
+
 /* Define to 1 if you have the <process.h> header file. */
 #undef HAVE_PROCESS_H
 
@@ -222,6 +225,9 @@
 
 /* Define to 1 if you have the `spawnvpe' function. */
 #undef HAVE_SPAWNVPE
+
+/* Define to 1 if you have the <spawn.h> header file. */
+#undef HAVE_SPAWN_H
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #undef HAVE_STDINT_H
