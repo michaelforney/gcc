@@ -1,4 +1,5 @@
 sinclude(../config/acx.m4)
+sinclude(../config/c.m4)
 sinclude(../config/no-executables.m4)
 sinclude(../config/override.m4)
 sinclude(../config/picflag.m4)
