@@ -4721,11 +4721,11 @@ find_switch_asserts (basic_block bb, gimple last)
   edge e;
   struct case_info *ci;
   size_t n = gimple_switch_num_labels (last);
-#if GCC_VERSION >= 4000
-  unsigned int idx;
-#else
+#if GCC_VERSION && GCC_VERSION < 4000
   /* Work around GCC 3.4 bug (PR 37086).  */
   volatile unsigned int idx;
+#else
+  unsigned int idx;
 #endif
 
   need_assert = false;
