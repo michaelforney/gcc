@@ -327,7 +327,7 @@ typedef unsigned long int uintptr_t;
 #  ifndef alloca
 
 /* Make alloca work the best possible way.  */
-#   ifdef __GNUC__
+#   if defined (__GNUC__) || 1
 #    define alloca __builtin_alloca
 #   else /* not __GNUC__ */
 #    if HAVE_ALLOCA_H
