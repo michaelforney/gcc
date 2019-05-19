@@ -49,7 +49,7 @@
 #include "fixlib.h"
 #include "server.h"
 
-STATIC volatile enum t_bool read_pipe_timeout;
+STATIC /*volatile*/ enum t_bool read_pipe_timeout;
 STATIC pid_t server_master_pid = NOPROCESS;
 
 tSCC* def_args[] =
