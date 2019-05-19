@@ -1408,7 +1408,7 @@ if test -d ${srcdir}/gcc && test "x$have_gmp" = xno; then
     mpfr_t n;
     mpfr_t x;
     mpc_t c;
-    int t;
+    int t = 0;
     mpfr_init (n);
     mpfr_init (x);
     mpfr_atan2 (n, n, x, GMP_RNDN);
